@@ -37,7 +37,7 @@ Los extremos relativos ocurren en los puntos donde la función pasa de crecer a 
     * Si $f''(x_0) < 0 \implies x_0$ es un **Máximo Relativo**.
     * Si $f''(x_0) > 0 \implies x_0$ es un **Mínimo Relativo**.
     * Si $f''(x_0) = 0 \implies$ El criterio no decide (se debe recurrir al signo de $f'$).
-
+![Máximo y mínimo](../assets/imagen1_aplicaciones-derivadas.png){ align=center width="40%" }
 !!! warning "¡Ojo en la PAU!"
     Un punto crítico ($f'(x_0) = 0$) **no siempre es un máximo o un mínimo**. Si la función no cambia de signo a ambos lados de $x_0$, el punto no es un extremo relativo (puede ser un punto de inflexión con tangente horizontal).
 
@@ -51,6 +51,8 @@ La segunda derivada $f''(x)$ nos informa sobre la forma de la curva de la funci�
   $f''(x) > 0 \text{ en } (a, b)$
 * **Cóncava ($\cap$):** Las tangentes quedan por encima de la curva.  
   $f''(x) < 0 \text{ en } (a, b)$
+
+![Curvatura](../assets/imagen2_aplicaciones-derivadas.gif){ align=center width="40%" }
 
 ---
 

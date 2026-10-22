@@ -3,6 +3,8 @@ site_description: Materiales y ejercicios de 2º de Bachillerato para EBAU
 site_author: Ernest Puyalto
 
 # Tema gráfico (Material for MkDocs)
+extra_css:
+  - stylesheets/extra.css
 copyright: Copyright &copy; 2026 - Ernest Puyalto | CC Sant Francesc Palma
 theme:
   name: material
@@ -26,7 +28,7 @@ theme:
         name: Cambiar a modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep orange
+      primary: deep purple
       accent: indigo
       toggle:
         icon: material/brightness-4

@@ -1,0 +1,72 @@
+/* ==========================================================================
+   1. COLOREAR NÚMEROS / ICONOS EN LA TABLA DE CONTENIDOS (TOC)
+   ========================================================================== */
+
+/* Cambia el color del texto y enlaces de la tabla de contenidos lateral */
+.md-nav--secondary .md-nav__link {
+  color: #353638; /* Color azul para los títulos en el índice lateral */
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary .md-nav__link {
+  color: #92969c; /* Color azul para los títulos en el índice lateral */
+}
+
+/* Resalta el elemento activo o sobre el que pasa el ratón */
+.md-nav--secondary .md-nav__link:hover,
+.md-nav--secondary .md-nav__link--active {
+  color: #2563eb; /* Color azul más claro */
+  font-weight: bold;
+}
+.md-typeset h1{
+  color: #353638; /* Color oscuro para los títulos */
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1{
+  color: #eaebee; /* Color oscuro para los títulos */
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  color: #eaebee; /* Color oscuro para los títulos */
+}
+
+/* Si usas la extensión 'navigation.indexes' o secciones numeradas */
+.md-nav--secondary .md-nav__link .md-ellipsis::before {
+  color: #e11d48; /* Color rojo/rosa para prefijos o números */
+  font-weight: bold;
+}
+
+
+/* ==========================================================================
+   2. CONTENEDORES DESTACADOS PARA TÍTULOS (H2 y H3)
+   ========================================================================== */
+
+
+   /* Contenedor elegante estilo tarjeta para cabeceras H2 */
+.md-typeset h2 {
+  background-color: #2563eb;       /* Fondo gris muy claro */
+  border-left: 5px solid #2563eb;    /* Borde lateral izquierdo de color */
+  padding: 10px 16px;               /* Espaciado interno */
+  border-radius: 4px 8px 8px 4px;    /* Bordes ligeramente redondeados */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Sombra suave */
+  margin-top: 1.8em;
+}
+
+/* Ajuste en modo oscuro para los contenedores H2 */
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  background-color: #3b82f6;       /* Fondo oscuro */
+  border-left-color: #3b82f6;       /* Borde azul brillante */
+  color: #f8fafc;
+}
+
+/* Contenedor simplificado con subraya de color para cabeceras H3 */
+.md-typeset h3 {
+  border-bottom: 2px solid #e2e8f0;  /* Línea inferior */
+  padding-bottom: 6px;
+  color: #1e293b;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  border-bottom-color: #334155;
+  color: #f1f5f9;
+}
