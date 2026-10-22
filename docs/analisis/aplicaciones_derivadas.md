@@ -27,9 +27,9 @@ Los extremos relativos ocurren en los puntos donde la función pasa de crecer a 
     Sea $x_0$ un punto crítico tal que $f'(x_0) = 0$:
 
     * **Máximo Relativo:** La función pasa de crecer a decrecer en $x_0$.  
-      $$\text{Signo de } f'(x): \quad + \quad \xrightarrow{\quad x_0 \quad} \quad -$$
+      $\text{Signo de } f'(x): \quad + \quad \xrightarrow{\quad x_0 \quad} \quad -$
     * **Mínimo Relativo:** La función pasa de decrecer a crecer en $x_0$.  
-      $$\text{Signo de } f'(x): \quad - \quad \xrightarrow{\quad x_0 \quad} \quad +$$
+      $\text{Signo de } f'(x): \quad - \quad \xrightarrow{\quad x_0 \quad} \quad +$
 
 === "Criterio de la Segunda Derivada"
     Si $x_0$ cumple que $f'(x_0) = 0$, calculamos $f''(x_0)$:
@@ -48,9 +48,9 @@ Los extremos relativos ocurren en los puntos donde la función pasa de crecer a 
 La segunda derivada $f''(x)$ nos informa sobre la forma de la curva de la función:
 
 * **Convexa ($\cup$):** Las tangentes quedan por debajo de la curva.  
-  $$f''(x) > 0 \text{ en } (a, b)$$
+  $f''(x) > 0 \text{ en } (a, b)$
 * **Cóncava ($\cap$):** Las tangentes quedan por encima de la curva.  
-  $$f''(x) < 0 \text{ en } (a, b)$$
+  $f''(x) < 0 \text{ en } (a, b)$
 
 ---
 
@@ -68,7 +68,7 @@ Un **punto de inflexión** es aquel punto del dominio donde la función cambia s
 
 ### Ejercicio
 Estudia la monotonía, extremos relativos, curvatura y puntos de inflexión de la función polinómica:
-$$f(x) = x^3 - 3x^2 - 9x + 2$$
+$f(x) = x^3 - 3x^2 - 9x + 2$
 
 ??? success "Ver Solución Paso a Paso"
     ### Paso 1: Dominio
@@ -76,10 +76,10 @@ $$f(x) = x^3 - 3x^2 - 9x + 2$$
 
     ### Paso 2: Monotonía y Extremos Relativos
     Calculamos la primera derivada:
-    $$f'(x) = 3x^2 - 6x - 9$$
+    $f'(x) = 3x^2 - 6x - 9$
 
     Igualamos a cero para obtener los puntos críticos:
-    $$3x^2 - 6x - 9 = 0 \implies x^2 - 2x - 3 = 0 \implies x = \frac{2 \pm \sqrt{4 - 4(1)(-3)}}{2} \implies x_1 = 3, \; x_2 = -1$$
+    $3x^2 - 6x - 9 = 0 \implies x^2 - 2x - 3 = 0 \implies x = \frac{2 \pm \sqrt{4 - 4(1)(-3)}}{2} \implies x_1 = 3, \; x_2 = -1$
 
     Estudiamos el signo de $f'(x)$ en los intervalos $(-\infty, -1)$, $(-1, 3)$ y $(3, +\infty)$:
 
@@ -88,6 +88,7 @@ $$f(x) = x^3 - 3x^2 - 9x + 2$$
     * En $(3, +\infty)$, elegimos $x = 4 \implies f'(4) = 3(4)^2 - 6(4) - 9 = 15 > 0 \implies$ **Creciente**
 
     **Conclusiones:**
+
     * **Creciente:** $(-\infty, -1) \cup (3, +\infty)$
     * **Decreciente:** $(-1, 3)$
     * **Máximo Relativo:** En $x = -1$. Evaluando en $f(x)$: $f(-1) = (-1)^3 - 3(-1)^2 - 9(-1) + 2 = 7 \implies \mathbf{(-1, 7)}$
@@ -97,10 +98,10 @@ $$f(x) = x^3 - 3x^2 - 9x + 2$$
 
     ### Paso 3: Curvatura y Puntos de Inflexión
     Calculamos la segunda derivada:
-    $$f''(x) = 6x - 6$$
+    $f''(x) = 6x - 6$
 
     Igualamos a cero para buscar candidatos a punto de inflexión:
-    $$6x - 6 = 0 \implies x = 1$$
+    $6x - 6 = 0 \implies x = 1$
 
     Estudiamos el signo de $f''(x)$ en los intervalos $(-\infty, 1)$ y $(1, +\infty)$:
 
@@ -108,6 +109,7 @@ $$f(x) = x^3 - 3x^2 - 9x + 2$$
     * En $(1, +\infty)$, elegimos $x = 2 \implies f''(2) = 6(2) - 6 = 6 > 0 \implies$ **Convexa ($\cup$)**
 
     **Conclusiones:**
+
     * **Cóncava ($\cap$):** $(-\infty, 1)$
     * **Convexa ($\cup$):** $(1, +\infty)$
     * **Punto de Inflexión:** En $x = 1$ hay cambio de curvatura. Evaluando en $f(x)$: $f(1) = 1^3 - 3(1)^2 - 9(1) + 2 = -9 \implies \mathbf{(1, -9)}$

@@ -46,6 +46,8 @@ markdown_extensions:
       generic: true
   - pymdownx.details           # Permite las cajas desplegables de soluciones
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true    # Hace que las pestañas se vean con el estilo moderno de Material
   - admonition
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
