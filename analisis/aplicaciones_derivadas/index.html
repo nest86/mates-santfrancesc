@@ -1123,19 +1123,27 @@
 <hr />
 <h2 id="2-maximos-y-minimos-relativos-extremos">2. Máximos y Mínimos Relativos (Extremos)</h2>
 <p>Los extremos relativos ocurren en los puntos donde la función pasa de crecer a decrecer o viceversa.</p>
-<p>=== "Criterio de la Primera Derivada"
-    Sea <span class="arithmatex">\(x_0\)</span> un punto crítico tal que <span class="arithmatex">\(f'(x_0) = 0\)</span>:</p>
-<pre><code>* **Máximo Relativo:** La función pasa de crecer a decrecer en $x_0$.  
-  $$\text{Signo de } f'(x): \quad + \quad \xrightarrow{\quad x_0 \quad} \quad -$$
-* **Mínimo Relativo:** La función pasa de decrecer a crecer en $x_0$.  
-  $$\text{Signo de } f'(x): \quad - \quad \xrightarrow{\quad x_0 \quad} \quad +$$
-</code></pre>
-<p>=== "Criterio de la Segunda Derivada"
-    Si <span class="arithmatex">\(x_0\)</span> cumple que <span class="arithmatex">\(f'(x_0) = 0\)</span>, calculamos <span class="arithmatex">\(f''(x_0)\)</span>:</p>
-<pre><code>* Si $f''(x_0) &lt; 0 \implies x_0$ es un **Máximo Relativo**.
-* Si $f''(x_0) &gt; 0 \implies x_0$ es un **Mínimo Relativo**.
-* Si $f''(x_0) = 0 \implies$ El criterio no decide (se debe recurrir al signo de $f'$).
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Criterio de la Primera Derivada</label><label for="__tabbed_1_2">Criterio de la Segunda Derivada</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Sea <span class="arithmatex">\(x_0\)</span> un punto crítico tal que <span class="arithmatex">\(f'(x_0) = 0\)</span>:</p>
+<ul>
+<li><strong>Máximo Relativo:</strong> La función pasa de crecer a decrecer en <span class="arithmatex">\(x_0\)</span>.<br />
+<span class="arithmatex">\(\text{Signo de } f'(x): \quad + \quad \xrightarrow{\quad x_0 \quad} \quad -\)</span></li>
+<li><strong>Mínimo Relativo:</strong> La función pasa de decrecer a crecer en <span class="arithmatex">\(x_0\)</span>.<br />
+<span class="arithmatex">\(\text{Signo de } f'(x): \quad - \quad \xrightarrow{\quad x_0 \quad} \quad +\)</span></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Si <span class="arithmatex">\(x_0\)</span> cumple que <span class="arithmatex">\(f'(x_0) = 0\)</span>, calculamos <span class="arithmatex">\(f''(x_0)\)</span>:</p>
+<ul>
+<li>Si <span class="arithmatex">\(f''(x_0) &lt; 0 \implies x_0\)</span> es un <strong>Máximo Relativo</strong>.</li>
+<li>Si <span class="arithmatex">\(f''(x_0) &gt; 0 \implies x_0\)</span> es un <strong>Mínimo Relativo</strong>.</li>
+<li>Si <span class="arithmatex">\(f''(x_0) = 0 \implies\)</span> El criterio no decide (se debe recurrir al signo de <span class="arithmatex">\(f'\)</span>).</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">¡Ojo en la PAU!</p>
 <p>Un punto crítico (<span class="arithmatex">\(f'(x_0) = 0\)</span>) <strong>no siempre es un máximo o un mínimo</strong>. Si la función no cambia de signo a ambos lados de <span class="arithmatex">\(x_0\)</span>, el punto no es un extremo relativo (puede ser un punto de inflexión con tangente horizontal).</p>
@@ -1145,9 +1153,9 @@
 <p>La segunda derivada <span class="arithmatex">\(f''(x)\)</span> nos informa sobre la forma de la curva de la función:</p>
 <ul>
 <li><strong>Convexa (<span class="arithmatex">\(\cup\)</span>):</strong> Las tangentes quedan por debajo de la curva.<br />
-  $<span class="arithmatex">\(f''(x) &gt; 0 \text{ en } (a, b)\)</span>$</li>
+<span class="arithmatex">\(f''(x) &gt; 0 \text{ en } (a, b)\)</span></li>
 <li><strong>Cóncava (<span class="arithmatex">\(\cap\)</span>):</strong> Las tangentes quedan por encima de la curva.<br />
-  $<span class="arithmatex">\(f''(x) &lt; 0 \text{ en } (a, b)\)</span>$</li>
+<span class="arithmatex">\(f''(x) &lt; 0 \text{ en } (a, b)\)</span></li>
 </ul>
 <hr />
 <h2 id="4-puntos-de-inflexion">4. Puntos de Inflexión</h2>
@@ -1161,42 +1169,46 @@
 <h2 id="5-ejemplo-completo-paso-a-paso">5. Ejemplo Completo Paso a Paso</h2>
 <h3 id="ejercicio">Ejercicio</h3>
 <p>Estudia la monotonía, extremos relativos, curvatura y puntos de inflexión de la función polinómica:
-$<span class="arithmatex">\(f(x) = x^3 - 3x^2 - 9x + 2\)</span>$</p>
+<span class="arithmatex">\(f(x) = x^3 - 3x^2 - 9x + 2\)</span></p>
 <details class="success">
 <summary>Ver Solución Paso a Paso</summary>
 <h3 id="paso-1-dominio">Paso 1: Dominio</h3>
 <p>Al ser una función polinómica, <span class="arithmatex">\(\text{Dom}(f) = \mathbb{R}\)</span>.</p>
 <h3 id="paso-2-monotonia-y-extremos-relativos">Paso 2: Monotonía y Extremos Relativos</h3>
 <p>Calculamos la primera derivada:
-$<span class="arithmatex">\(f'(x) = 3x^2 - 6x - 9\)</span>$</p>
+<span class="arithmatex">\(f'(x) = 3x^2 - 6x - 9\)</span></p>
 <p>Igualamos a cero para obtener los puntos críticos:
-$<span class="arithmatex">\(3x^2 - 6x - 9 = 0 \implies x^2 - 2x - 3 = 0 \implies x = \frac{2 \pm \sqrt{4 - 4(1)(-3)}}{2} \implies x_1 = 3, \; x_2 = -1\)</span>$</p>
+<span class="arithmatex">\(3x^2 - 6x - 9 = 0 \implies x^2 - 2x - 3 = 0 \implies x = \frac{2 \pm \sqrt{4 - 4(1)(-3)}}{2} \implies x_1 = 3, \; x_2 = -1\)</span></p>
 <p>Estudiamos el signo de <span class="arithmatex">\(f'(x)\)</span> en los intervalos <span class="arithmatex">\((-\infty, -1)\)</span>, <span class="arithmatex">\((-1, 3)\)</span> y <span class="arithmatex">\((3, +\infty)\)</span>:</p>
 <ul>
 <li>En <span class="arithmatex">\((-\infty, -1)\)</span>, elegimos <span class="arithmatex">\(x = -2 \implies f'(-2) = 3(-2)^2 - 6(-2) - 9 = 15 &gt; 0 \implies\)</span> <strong>Creciente</strong></li>
 <li>En <span class="arithmatex">\((-1, 3)\)</span>, elegimos <span class="arithmatex">\(x = 0 \implies f'(0) = -9 &lt; 0 \implies\)</span> <strong>Decreciente</strong></li>
 <li>En <span class="arithmatex">\((3, +\infty)\)</span>, elegimos <span class="arithmatex">\(x = 4 \implies f'(4) = 3(4)^2 - 6(4) - 9 = 15 &gt; 0 \implies\)</span> <strong>Creciente</strong></li>
 </ul>
-<p><strong>Conclusiones:</strong>
-* <strong>Creciente:</strong> <span class="arithmatex">\((-\infty, -1) \cup (3, +\infty)\)</span>
-* <strong>Decreciente:</strong> <span class="arithmatex">\((-1, 3)\)</span>
-* <strong>Máximo Relativo:</strong> En <span class="arithmatex">\(x = -1\)</span>. Evaluando en <span class="arithmatex">\(f(x)\)</span>: <span class="arithmatex">\(f(-1) = (-1)^3 - 3(-1)^2 - 9(-1) + 2 = 7 \implies \mathbf{(-1, 7)}\)</span>
-* <strong>Mínimo Relativo:</strong> En <span class="arithmatex">\(x = 3\)</span>. Evaluando en <span class="arithmatex">\(f(x)\)</span>: <span class="arithmatex">\(f(3) = 3^3 - 3(3)^2 - 9(3) + 2 = -25 \implies \mathbf{(3, -25)}\)</span></p>
+<p><strong>Conclusiones:</strong></p>
+<ul>
+<li><strong>Creciente:</strong> <span class="arithmatex">\((-\infty, -1) \cup (3, +\infty)\)</span></li>
+<li><strong>Decreciente:</strong> <span class="arithmatex">\((-1, 3)\)</span></li>
+<li><strong>Máximo Relativo:</strong> En <span class="arithmatex">\(x = -1\)</span>. Evaluando en <span class="arithmatex">\(f(x)\)</span>: <span class="arithmatex">\(f(-1) = (-1)^3 - 3(-1)^2 - 9(-1) + 2 = 7 \implies \mathbf{(-1, 7)}\)</span></li>
+<li><strong>Mínimo Relativo:</strong> En <span class="arithmatex">\(x = 3\)</span>. Evaluando en <span class="arithmatex">\(f(x)\)</span>: <span class="arithmatex">\(f(3) = 3^3 - 3(3)^2 - 9(3) + 2 = -25 \implies \mathbf{(3, -25)}\)</span></li>
+</ul>
 <hr />
 <h3 id="paso-3-curvatura-y-puntos-de-inflexion">Paso 3: Curvatura y Puntos de Inflexión</h3>
 <p>Calculamos la segunda derivada:
-$<span class="arithmatex">\(f''(x) = 6x - 6\)</span>$</p>
+<span class="arithmatex">\(f''(x) = 6x - 6\)</span></p>
 <p>Igualamos a cero para buscar candidatos a punto de inflexión:
-$<span class="arithmatex">\(6x - 6 = 0 \implies x = 1\)</span>$</p>
+<span class="arithmatex">\(6x - 6 = 0 \implies x = 1\)</span></p>
 <p>Estudiamos el signo de <span class="arithmatex">\(f''(x)\)</span> en los intervalos <span class="arithmatex">\((-\infty, 1)\)</span> y <span class="arithmatex">\((1, +\infty)\)</span>:</p>
 <ul>
 <li>En <span class="arithmatex">\((-\infty, 1)\)</span>, elegimos <span class="arithmatex">\(x = 0 \implies f''(0) = -6 &lt; 0 \implies\)</span> <strong>Cóncava (<span class="arithmatex">\(\cap\)</span>)</strong></li>
 <li>En <span class="arithmatex">\((1, +\infty)\)</span>, elegimos <span class="arithmatex">\(x = 2 \implies f''(2) = 6(2) - 6 = 6 &gt; 0 \implies\)</span> <strong>Convexa (<span class="arithmatex">\(\cup\)</span>)</strong></li>
 </ul>
-<p><strong>Conclusiones:</strong>
-* <strong>Cóncava (<span class="arithmatex">\(\cap\)</span>):</strong> <span class="arithmatex">\((-\infty, 1)\)</span>
-* <strong>Convexa (<span class="arithmatex">\(\cup\)</span>):</strong> <span class="arithmatex">\((1, +\infty)\)</span>
-* <strong>Punto de Inflexión:</strong> En <span class="arithmatex">\(x = 1\)</span> hay cambio de curvatura. Evaluando en <span class="arithmatex">\(f(x)\)</span>: <span class="arithmatex">\(f(1) = 1^3 - 3(1)^2 - 9(1) + 2 = -9 \implies \mathbf{(1, -9)}\)</span></p>
+<p><strong>Conclusiones:</strong></p>
+<ul>
+<li><strong>Cóncava (<span class="arithmatex">\(\cap\)</span>):</strong> <span class="arithmatex">\((-\infty, 1)\)</span></li>
+<li><strong>Convexa (<span class="arithmatex">\(\cup\)</span>):</strong> <span class="arithmatex">\((1, +\infty)\)</span></li>
+<li><strong>Punto de Inflexión:</strong> En <span class="arithmatex">\(x = 1\)</span> hay cambio de curvatura. Evaluando en <span class="arithmatex">\(f(x)\)</span>: <span class="arithmatex">\(f(1) = 1^3 - 3(1)^2 - 9(1) + 2 = -9 \implies \mathbf{(1, -9)}\)</span></li>
+</ul>
 </details>
 <h2 id="6-presentacion-de-la-unidad">6. Presentación de la unidad</h2>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
