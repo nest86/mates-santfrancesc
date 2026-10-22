@@ -1,0 +1,72 @@
+site_name: Matemáticas Aplicadas a las CCSS II
+site_description: Materiales y ejercicios de 2º de Bachillerato para EBAU
+site_author: Ernest Puyalto
+
+# Tema gráfico (Material for MkDocs)
+copyright: Copyright &copy; 2026 - Ernest Puyalto | CC Sant Francesc Palma
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.footer      # Muestra el pie con enlaces a la página anterior y siguiente
+    - navigation.top         # Muestra botón flotante para volver arriba
+  favicon: assets/favicon.png
+  logo: assets/favicon.png
+  font:
+    text: Inter         # Fuente para el texto del cuerpo y párrafos
+    code: JetBrains mono    # Fuente para bloques de código y fórmulas monospaciadas
+  palette:
+    # Modo Claro / Oscuro conmutable
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs          # Menú de pestañas superiores
+    - navigation.sections      # Secciones colapsables en la barra lateral
+    - navigation.top           # Botón para volver arriba
+    - content.code.copy        # Botón para copiar código
+    - search.suggest           # Búsqueda inteligente con sugerencias
+
+# Extensiones para matemáticas y bloques desplegables (??? success)
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details           # Permite las cajas desplegables de soluciones
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Scripts para renderizar LaTeX mediante MathJax
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Estructura del Menú de Navegación de la Web
+nav:
+  - Inicio: index.md
+  - Bloque I - Álgebra:
+      - Matrices y Programación Lineal: algebra/matrices1.md
+  - Bloque II - Análisis:
+      - U5.Límites: analisis/limites.md
+      - U6.Derivadas: analisis/derivadas.md
+      - U7.Aplicaciones de las derivadas: analisis/aplicaciones_derivadas.md
+      - U8.Representación de funciones: analisis/representacion_funciones.md
+      - U9.La integral definida: analisis/integral.md
+  - Bloque III - Estadística:
+      - Probabilidad y Normal: estadistica/probabilidad.md
